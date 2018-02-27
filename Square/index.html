@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+<title>Square</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+	
+	<style>
+		@media (min-width: 768px){
+			body{
+				font-size: 11px;
+			}
+			.row-total{
+				padding: .5em;
+			}
+			.square{
+				border: 1px solid powderblue;
+				padding: .5em;
+			}
+		}
+		@media (min-width: 992px){
+			body{
+				font-size: 13px;
+			}
+			.square{
+				border: 1px solid powderblue;
+				padding: 1em 0em 1em 0em;
+			}
+			.row-total{
+				padding: 1em;
+			}			
+		}		
+		@media (min-width: 1200px){
+			body{
+				font-size: 15px;
+			}
+			.square{
+				border: 1px solid powderblue;
+				padding: 1em 1em 1em 1em;
+			}
+			.row-total{
+				padding: 1em;
+			}		
+		}
+		.row-total{
+			color: coral;
+		}
+	</style>
+
+</head>
+<body>
+	
+	<div class="container border">
+		<div class="row text-center" style="padding: 2em;">
+			<div class="col-sm-6">
+				<label for="target-number">Number:</label>
+				<input id="target-number" class="target-number" type="text" maxlength="2">
+			</div>
+			<div class="col-sm-1">
+			Speed
+			</div>
+			<div class="col-sm-5 slidecontainer">
+				<label>Fast</label>
+				<input type="range" min="0" max="2000" value="1000" class="slider" step="500" id="myRange" list="steplist" style="width: 75%;">
+				<label>Slow</label>
+				<datalist id="steplist">
+					<option>0</option>
+					<option>500</option>
+					<option>1000</option>
+					<option>1500</option>
+					<option>2000</option>
+				</datalist>
+			</div>
+		</div>
+		<div class="row" style="padding: 2em;">
+			<div class="col-sm-6 text-center">
+				<div class="container magic-square">
+					<div class="row">
+						<div class="square col-sm-2 offset-sm-2">
+						1
+						</div>
+						<div class="square col-sm-2">
+						2
+						</div>
+						<div class="square col-sm-2">
+						3
+						</div>
+						<div class="square col-sm-2">
+						4
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>							
+					</div>
+					<div class="row">
+						<div class="square col-sm-2 offset-sm-2">
+						5
+						</div>
+						<div class="square col-sm-2">
+						6
+						</div>
+						<div class="square col-sm-2">
+						7
+						</div>
+						<div class="square col-sm-2">
+						8
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>						
+					</div>
+					<div class="row">
+						<div class="square col-sm-2 offset-sm-2">
+						9
+						</div>
+						<div class="square col-sm-2">
+						10
+						</div>
+						<div class="square col-sm-2">
+						11
+						</div>
+						<div class="square col-sm-2">
+						12
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>						
+					</div>
+					<div class="row">
+						<div class="square col-sm-2 offset-sm-2">
+						13
+						</div>
+						<div class="square col-sm-2">
+						14
+						</div>
+						<div class="square col-sm-2">
+						15
+						</div>
+						<div class="square col-sm-2">
+						16
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>						
+					</div>					
+					<div class="row">
+						<div class="row-total col-sm-2 offset-sm-2">
+						
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>
+						<div class="row-total col-sm-2">
+						
+						</div>						
+					</div>						
+				</div>
+			</div>
+			<div class="col-sm-6 text-center">
+				<div class="container logic">
+
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding: 2em;">		
+			<div class="col-sm-12 text-center">
+				<input class="validate" type="button" value="Validate >>" style="background-color:#4CAF50; border-radius: 5px; color: white;font-size: 13px; padding: .5em 1em .5em 1em;">
+			</div>
+		</div>
+	</div>
+
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/jquery-3.3.1.min.js"></script>
+	<script src="./assets/js/site.js"></script>
+	
+</body>
+</html>
